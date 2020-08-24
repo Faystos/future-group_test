@@ -1,0 +1,105 @@
+.head { 
+  width: 1601px;
+  height: 1052px;
+  padding: 80px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: 
+  url(../../img/head-fon.png) 0 100% no-repeat,
+  url(../../img/head-layer.png) 0 100% no-repeat;
+  margin: 0 auto;
+  position: relative;  
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 30px;
+    background: url(../../img/cyrcle.png) 51% 42% no-repeat;
+    top: 184px;
+    right: 733px;
+  }
+
+  .head-logo {
+    margin: 0 0 0 214px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 125px;
+      background: url(../../img/Pattern.png) 100% 100% no-repeat;
+      top: -80px;
+      left: -216px;
+    }
+  }
+
+  .head-search {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 43px;
+    width: 371px;
+    height: 65px;
+    margin: 0 219px 0 0; 
+    padding: 0 0 0 5px;     
+    font-size: 18px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background:url(../../img/search.png);
+      top: 19px;
+      left: 31px;  
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 37px;
+      box-shadow: -1.3px 4.8px 23.8px 1.3px rgba(189, 227, 239, 0.75);
+      background-color: #e0e0e0;
+      top: 14px;
+      right: 189px;      
+    }    
+
+    .head-search_search {
+      border: none;
+      width: 170px;
+      font-weight: 600;
+      padding: 5px 5px 8px 67px;
+      outline: none; 
+
+      &::placeholder {
+        color: #151515;
+      }
+    }
+
+    .head-search_collection {
+      font-weight: 600;
+      width: 170px;
+      margin: 0 0 4px 41px;
+      padding: 5px 55px 5px 5px;
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-bottom: 2px solid #151515;
+        border-right: 2px solid #151515;
+        transform: rotate(45deg);
+        top: 8px;
+        right: 31px;
+      }
+    }
+  } 
+}
